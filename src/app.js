@@ -3,7 +3,6 @@ const express = require('express');
 const views = require('./routes/views');
 
 const app = express();
-require('dotenv').config()
 
 app.use('/', views);
 app.use('/static', express.static('public'));
